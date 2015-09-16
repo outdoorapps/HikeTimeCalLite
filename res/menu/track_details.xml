@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/show_on_map"
+        android:icon="@drawable/ic_show_on_map"
+        android:showAsAction="ifRoom"
+        android:title="@string/show_on_map"/>
+    <item
+        android:id="@+id/export_track"
+        android:icon="@drawable/ic_export"
+        android:showAsAction="ifRoom"
+        android:title="@string/export_track"/>
+    <item
+        android:id="@+id/change_track_name"
+        android:showAsAction="never"
+        android:title="@string/change_track_name"/>
+    <item
+        android:id="@+id/update_elevations"
+        android:showAsAction="never"
+        android:title="@string/update_elevations"/>
+    <item
+        android:id="@+id/help"
+        android:showAsAction="never"
+        android:title="@string/help"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

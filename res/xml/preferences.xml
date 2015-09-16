@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="true"
+        android:entries="@array/pref_unit_entries"
+        android:entryValues="@array/pref_unit_values"
+        android:key="display_unit"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_unit" />
+
+    <Preference
+        android:key="default_parameters"
+        android:summary="@string/pref_summary_default_parameters"
+        android:title="@string/pref_title_default_parameters" />
+
+    <ListPreference
+        android:defaultValue="google_elevation_api"
+        android:entries="@array/pref_elevation_source_entries"
+        android:entryValues="@array/pref_elevation_source_values"
+        android:key="elevation_source"
+        android:title="@string/pref_title_elevation_source" />
+    <ListPreference
+        android:defaultValue="#ffffffff"
+        android:entries="@array/pref_info_text_color_entries"
+        android:entryValues="@array/pref_info_text_color_values"
+        android:key="info_text_color"
+        android:title="@string/pref_title_info_text_color" />
+    
+    <Preference
+        android:key="about"
+        android:title="@string/about" />
+
+</PreferenceScreen>

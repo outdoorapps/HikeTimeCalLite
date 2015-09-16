@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hiking Route Planner Lite</string>
+    <string name="gopro_title">Function Not Available</string>
+    <string name="gopro_message">This function is only available in the Pro version</string>
+    <string name="gopro">Go Pro</string>
+
+</resources>

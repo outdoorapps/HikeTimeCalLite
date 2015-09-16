@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="developer">By OutdoorApps</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="third_party_api">Third Party APIs</string>
+    <string name="graphview">GraphView 3.0 by jjoe64</string>
+    <string name="google_maps_android">Google Maps Android v2</string>
+    <string name="google_elevation_api">Google Elevation API</string>
+    <string name="usgs">USGS Elevation Query Web Service</string>
+
+</resources>

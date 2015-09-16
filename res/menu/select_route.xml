@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/show_details"
+        android:icon="@drawable/ic_details"
+        android:showAsAction="ifRoom"
+        android:title="@string/show_details"/>
+    <item
+        android:id="@+id/show_on_map"
+        android:icon="@drawable/ic_show_on_map"
+        android:showAsAction="ifRoom"
+        android:title="@string/show_on_map"/>
+    <item
+        android:id="@+id/hide_from_map"
+        android:icon="@drawable/ic_hide"
+        android:showAsAction="ifRoom"
+        android:title="@string/hide_from_map"/>
+    <item
+        android:id="@+id/edit_route"
+        android:icon="@drawable/ic_edit"
+        android:showAsAction="ifRoom"
+        android:title="@string/edit_route"/>
+    <item
+        android:id="@+id/import_route"
+        android:icon="@drawable/ic_import"
+        android:showAsAction="ifRoom"
+        android:title="@string/import_route"/>
+    <item
+        android:id="@+id/export_route"
+        android:icon="@drawable/ic_export"
+        android:showAsAction="ifRoom"
+        android:title="@string/export_route"/>
+    <item
+        android:id="@+id/remove_route"
+        android:icon="@drawable/ic_remove"
+        android:showAsAction="ifRoom"
+        android:title="@string/remove"/>
+    <item
+        android:id="@+id/select_all"
+        android:showAsAction="never"
+        android:title="@string/select_all"/>
+    <item
+        android:id="@+id/deselect_all"
+        android:showAsAction="never"
+        android:title="@string/deselect_all"/>
+    <item
+        android:id="@+id/help"
+        android:showAsAction="never"
+        android:title="@string/help"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

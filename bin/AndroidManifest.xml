@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.outdoorapps.hiketimecallite"
+    android:versionCode="12"
+    android:versionName="2.0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching & export -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- For importing files -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCzhehCxu6p974ev6U9OqCkQuAB0l_RCVQ" />
+        <!-- AIzaSyCzhehCxu6p974ev6U9OqCkQuAB0l_RCVQ -->
+
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.SelectRouteActivity"
+            android:label="@string/title_activity_select_route"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.outdoorapps.hikingtimecalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.RouteDetailsActivity"
+            android:label="@string/title_activity_route_details"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.BaseTheme" >
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.DefaultParametersSettingsActivity"
+            android:label="@string/title_activity_default_parameters_settings"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.SettingsActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.outdoorapps.hikingtimecalculator.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.SimpleCalculatorActivity"
+            android:label="@string/title_activity_simple_calculator"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.outdoorapps.hikingtimecalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.SettingsActivity"
+            android:theme="@style/Theme.BaseTheme" >
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.ChecklistActivity"
+            android:label="@string/title_activity_checklist"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.outdoorapps.hiketimecallite.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.GeneralImportActivity"
+            android:label="@string/title_activity_general_import"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.BaseTheme" >
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.GeneralExportActivity"
+            android:label="@string/title_activity_general_export"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.BaseTheme" >
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.SelectTrackActivity"
+            android:label="@string/title_activity_select_track"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.outdoorapps.hiketimecallite.MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.outdoorapps.hikingtimecalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.outdoorapps.hiketimecallite.TrackDetailsActivity"
+            android:label="@string/title_activity_track_details" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

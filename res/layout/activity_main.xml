@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6775820538431999/9559134260"
+        ads:loadAdOnCreate="true"
+        android:paddingTop="?android:attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/route_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adView"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/distance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/route_name_info"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/return_distance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/distance_info"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/elevation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/return_distance_info"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/elevation_info"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/return_time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time_info"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/edit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="5dp"
+        android:paddingTop="?android:attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/drawing_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="5dp"
+        android:paddingTop="?android:attr/actionBarSize" />
+    <!-- From buttom up -->
+
+    <TextView
+        android:id="@+id/speed_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="?android:attr/actionBarSize"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/altitude_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/speed_info"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/odometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/altitude_info"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/odometer"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/tracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/duration"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp" />
+
+</RelativeLayout>

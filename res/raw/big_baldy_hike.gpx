@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Hiking Route Planner" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Big Baldy Hike</name>
+        <routeInfo>
+            <routeDistance>5.606439361624044</routeDistance>
+            <routeAdjDistance>5.723328144996885</routeAdjDistance>
+            <tripTime>223.7478312763244</tripTime>
+            <returnTripTime>134.83329528448843</returnTripTime>
+            <roundTripTime>358.58112656081283</roundTripTime>
+            <tripElevationGain>1013.2908935</tripElevationGain>
+            <tripElevationLoss>45.05712889999995</tripElevationLoss>
+        </routeInfo>
+        <parameters>
+            <parametersMetric>true</parametersMetric>
+            <elevationMetric>true</elevationMetric>
+            <speed>5.0</speed>
+            <ascendTimeIncrease>3.0</ascendTimeIncrease>
+            <ascendHeightInput>20.0</ascendHeightInput>
+            <descendTimeIncrease>1.2</descendTimeIncrease>
+            <descendHeightInput>20.0</descendHeightInput>
+        </parameters>
+    </metadata>
+    <rte>
+        <rtept lat="40.34141802993359" lon="-111.67672611773014">
+            <ele>1656.055542</ele>
+        </rtept>
+        <rtept lat="40.34273485416222" lon="-111.67583964765072">
+            <ele>1701.8571777</ele>
+        </rtept>
+        <rtept lat="40.34344602566295" lon="-111.67428597807884">
+            <ele>1710.0913086</ele>
+        </rtept>
+        <rtept lat="40.34431204508107" lon="-111.6739859059453">
+            <ele>1724.7633057</ele>
+        </rtept>
+        <rtept lat="40.34542336501249" lon="-111.67165037244558">
+            <ele>1766.723877</ele>
+        </rtept>
+        <rtept lat="40.347087372028504" lon="-111.67099121958017">
+            <ele>1803.2180176</ele>
+        </rtept>
+        <rtept lat="40.3481986462347" lon="-111.6688484698534">
+            <ele>1841.1365967</ele>
+        </rtept>
+        <rtept lat="40.34925215509255" lon="-111.66719522327185">
+            <ele>1878.7507324</ele>
+        </rtept>
+        <rtept lat="40.35013470841935" lon="-111.66745238006115">
+            <ele>1902.2802734</ele>
+        </rtept>
+        <rtept lat="40.35059207806665" lon="-111.66475273668766">
+            <ele>1926.3121338</ele>
+        </rtept>
+        <rtept lat="40.35135937894934" lon="-111.66390247642994">
+            <ele>1942.3666992</ele>
+        </rtept>
+        <rtept lat="40.35233976367726" lon="-111.66212383657694">
+            <ele>1962.8043213</ele>
+        </rtept>
+        <rtept lat="40.355574906606925" lon="-111.66034553200006">
+            <ele>2029.348999</ele>
+        </rtept>
+        <rtept lat="40.35670392524397" lon="-111.65949024260044">
+            <ele>2061.9379883</ele>
+        </rtept>
+        <rtept lat="40.35797829605043" lon="-111.65811896324158">
+            <ele>2094.0930176</ele>
+        </rtept>
+        <rtept lat="40.358893181328796" lon="-111.65799021720886">
+            <ele>2126.1494141</ele>
+        </rtept>
+        <rtept lat="40.35935074705233" lon="-111.65631886571646">
+            <ele>2151.9221191</ele>
+        </rtept>
+        <rtept lat="40.361187876656814" lon="-111.65532108396292">
+            <ele>2215.2683105</ele>
+        </rtept>
+        <rtept lat="40.36566412163145" lon="-111.65514975786209">
+            <ele>2372.9633789</ele>
+        </rtept>
+        <rtept lat="40.36976814940582" lon="-111.65513265877962">
+            <ele>2475.6049805</ele>
+        </rtept>
+        <rtept lat="40.371650462214276" lon="-111.65582567453384">
+            <ele>2540.8354492</ele>
+        </rtept>
+        <rtept lat="40.37180397733312" lon="-111.65635909885168">
+            <ele>2541.4211426</ele>
+        </rtept>
+        <rtept lat="40.37044020931456" lon="-111.65806230157614">
+            <ele>2572.5144043</ele>
+        </rtept>
+        <rtept lat="40.36966750587787" lon="-111.65859371423721">
+            <ele>2578.1862793</ele>
+        </rtept>
+        <rtept lat="40.36821377764821" lon="-111.66182946413755">
+            <ele>2586.8305664</ele>
+        </rtept>
+        <rtept lat="40.36754399457552" lon="-111.66401512920856">
+            <ele>2620.0246582</ele>
+        </rtept>
+        <rtept lat="40.366220757499654" lon="-111.66566502302885">
+            <ele>2669.3464355</ele>
+        </rtept>
+        <rtept lat="40.36563270056194" lon="-111.66722942143679">
+            <ele>2635.6176758</ele>
+        </rtept>
+        <rtept lat="40.36442361689984" lon="-111.66770081967115">
+            <ele>2624.2893066</ele>
+        </rtept>
+    </rte>
+</gpx>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/max_elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/max_elevation"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/max_elevation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_max_elevation"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="35"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/min_elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/min_elevation"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/min_elevation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_min_elevation"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLength="35"
+        android:singleLine="true" />
+
+</LinearLayout>

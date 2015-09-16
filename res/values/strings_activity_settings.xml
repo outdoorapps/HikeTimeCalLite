@@ -1,0 +1,57 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string-array name="pref_unit_entries">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+    <string-array name="pref_unit_values">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string name="pref_title_unit">Display Unit</string>
+    <string name="pref_summary_default_parameters">Edit default parameters for hiking time calculations</string>
+    <string name="pref_title_default_parameters">Default Parameters</string>
+
+    <string-array name="pref_elevation_source_entries">
+        <item>Google Elevation API</item>
+        <item>USGS Elevation Query Web Service</item>
+    </string-array>
+    <string-array name="pref_elevation_source_values">
+        <item>google_elevation_api</item>
+        <item>usgs</item>
+    </string-array>
+
+    <string name="pref_title_elevation_source">Elevation Source</string>
+    <string name="pref_title_info_text_color">Info Text Color</string>
+
+    <string-array name="pref_info_text_color_entries">
+        <item>White</item>
+        <item>Black</item>
+        <item>Gray</item>
+        <item>Light Gray</item>
+        <item>Dark Gray</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="pref_info_text_color_values">
+        <item>white</item>
+        <item>black</item>
+        <item>gray</item>
+        <item>lightgray</item>
+        <item>darkgray</item>
+        <item>red</item>
+        <item>blue</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>cyan</item>
+        <item>magenta</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="eula_message">READ THESE TERMS AND CONDITIONS OF THIS ONE-TIME PRUCHASE END USER LICENSE AGREEMENT (“AGREEMENT”) CAREFULLY BEFORE PURCHASING OR USING OUTDOORAPPS ("OUTDOORAPPS") SOFTWARE, TECHNOLOGY, AND/OR DATA FOR YOUR ANDROID DEVICE (“DEVICE”). BY PURCHASING, SUBSCRIBING TO, DOWNLOADING, INSTALLING, USING, OR OTHERWISE ACCESSING THE OUTDOORAPPS APPLICATION, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, THAT YOU UNDERSTAND IT, THAT YOU AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS, AND THAT YOU ARE AT LEAST 18 YEARS OF AGE. IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT LOAD THE OUTDOORAPPS SOFTWARE ONTO YOUR DEVICE.\n
+\n
+1 Limited Warranty\n
+\n
+This OUTDOORAPPS Application (excluding the map data and other third-party content data) is warranted to perform substantially as described in the product documentation. This warranty does not cover failures due to abuse, misuse, accident or unauthorized alteration or repairs.\n
+\n
+This OUTDOORAPPS Application is intended to be used only as a travel aid and must not be used for any purpose requiring precise measurement of direction, distance, location or topography. OUTDOORAPPS MAKES NO WARRANTY AS TO THE ACCURACY OR COMPLETENESS OF MAP DATA OR OTHER THIRD-PARTY CONTENT IN THE APPLICATION.\n
+\n
+THE WARRANTIES AND REMEDIES CONTAINED HEREIN ARE EXCLUSIVE AND IN LIEU OF ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR ARISING FROM TRADE USAGE OR COURSE OF CONDUCT, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT AND OTHER EXPRESS OR IMPLIED WARRANTIES OF ACCURACY, COMPLETENESS, “REAL-TIME” INFORMATION, TITLE OR ANY OTHER TYPE OF WARRANTIES RELATING TO THE OUTDOORAPPS APPLICATION OR ITS PERFORMANCE HEREUNDER.\n
+\n
+2 Disclaimer of Warranty\n
+\n
+ALL INFORMATION IS PROVIDED TO YOU "AS IS", AND YOU AGREE TO USE IT AT YOUR OWN RISK. OUTDOORAPPS AND ITS LICENSORS (AND THEIR LICENSORS AND SUPPLIERS) MAKE NO GUARANTEES, REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARISING BY LAW OR OTHERWISE, REGARDING THE INFORMATION, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE, CONTENT, QUALITY, ACCURACY, COMPLETENESS, EFFECTIVENESS, RELIABILITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OF THIRD PARTY RIGHTS, USEFULNESS, USE OR RESULTS TO BE OBTAINED FROM INFORMATION, OR THAT THE INFORMATION WILL BE ERROR-FREE. Some states, territories and countries may not allow certain warranty exclusions, so to that extent, the above exclusion may not apply to you.\n
+\n
+3 Limitation of Liability\n
+\n
+YOU ASSUME ALL RESPONSIBILITY AND RISK FOR THE USE OF THE OUTDOORAPPS APPLICATION, AND OUTDOORAPPS DISCLAIMS ALL LIABILITY FOR ANY LOSS, INJURY, OR DAMAGE RESULTING FROM USE OF THE OUTDOORAPPS APPLICATION AND ANY THIRD-PARTY DATA OR CONTENT. IT IS YOUR RESPONSIBILITY TO USE THE OUTDOORAPPS APPLICATION PRUDENTLY AND TO VISUALLY VERIFY STREETS, ROADS, ROAD SIGNS, DIRECTIONS, WEATHER CONDITIONS, AND TRAFFIC CONDITIONS. IN NO EVENT SHALL OUTDOORAPPS OR ITS SUPPLIERS, INCLUDING THIRD-PARTY DATA PROVIDERS, BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY COMPENSATORY, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, INDIRECT, DIRECT, SPECIAL, PUNITIVE, OR EXEMPLARY DAMAGES FOR LOSS OF BUSINESS, LOSS OF PROFITS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE THE OUTDOORAPPS APPLICATION AND ANY THIRD-PARTY DATA OR CONTENT, EVEN IF OUTDOORAPPS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SUBJECT TO THE FOREGOING, OUTDOORAPPS’ AND ITS SUPPLIERS’ TOTAL AGGREGATE LIABILITY WITH RESPECT TO ITS OBLIGATIONS UNDER THIS AGREEMENT OR OTHERWISE WITH RESPECT TO THE OUTDOORAPPS APPLICATION SHALL NOT EXCEED $1.00. SOME STATES AND COUNTRIES DO NOT ALLOW THE EXCLUSION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.\n
+\n
+OUTDOORAPPS makes no representations about the suitability for any purpose of the geographic data and attribute data ("Data") presented in this application. All such Data is provided on an "as is" basis and the Data has not been validated by OUTDOORAPPS.\n
+\n
+OUTDOORAPPS makes no representations or warranties respecting the Data, either expressed or implied, arising by law or otherwise, including but not limited to, effectiveness, completeness, accuracy or fitness for a particular purpose. OUTDOORAPPS does not assume any liability in respect of any damage or loss incurred or suffered as a result of the use of the Data. In no event shall OUTDOORAPPS be liable in any way for loss of revenue or contracts, or any other consequential loss of any kind resulting from the use of the Data.\n
+\n
+4 3rd Party APIs\n
+\n
+This application uses Google Maps Android API v2.\n
+https://developers.google.com/maps/documentation/android/\n
+\n
+This application uses Google Elevation API.\n
+https://developers.google.com/maps/documentation/elevation/\n
+\n
+This application uses data that is produced by the U.S. Geological Survey.\n
+http://gisdata.usgs.gov/xmlwebservices2/elevation_service.asmx\n
+\n
+This application uses GraphView 3.0 by jjoe64\n
+http://www.jjoe64.com/p/graphview-library.html\n
+\n
+5. Terms of License\n
+This license allows you to:\n
+(a) use the Software on a single device; and if you wish to use the Software on more than one device, you must license another copy of the Software.\n
+\n
+6. Restrictions on Use\n
+Unless OUTDOORAPPS (Owner) has authorized you to distribute the Software, you shall not make or distribute copies of the Software or transfer the Software from one device to another. You shall not decompile, reverse engineer, disassemble, include in other software, or translate the Software, or use the Software for any commercial purposes. You shall not modify, alter, change or otherwise make any modification to the Software or create derivative works based upon the Software. You shall not rent, lease, resell, sub-license, assign, distribute or otherwise transfer the Software or this license. Any attempt to do so shall be void and of no effect.\n
+\n
+7. Ownership\n
+This license provides you with limited rights to use the Software. The Owner retains all ownership, right, title and interest in, to and of the Software and all copies of it. All rights not specifically granted in this license, including domestic and international copyrights, are reserved by the Owner.\n
+\n
+8. Proprietary Markings\n
+The Owner\'s logos, product names, manuals, documentation, and other support materials are either patented, copyrighted, trademarked, constitute valuable trade secrets (whether or not any portion of them may be copyrighted or patented) or are otherwise proprietary to the Owner. You shall not remove or obscure the Owner\'s copyright, trade mark or other proprietary notices from any of the materials contained in this package or downloaded together with the Software.\n
+\n
+9. Disclaimer of Warranties and Technical Support\n
+The Software is provided to you after paying a licence and on an "AS IS" basis, without any technical support or warranty of any kind including, without limitation, any warranty or condition of merchantability, fitness for a particular purpose and non-infringement.\n
+\n
+IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR TO USE OF THIS CONTENT.</string>
+
+</resources>
