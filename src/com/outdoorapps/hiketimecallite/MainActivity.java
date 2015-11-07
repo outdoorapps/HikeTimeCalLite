@@ -37,9 +37,8 @@ import android.widget.Toast;
 
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
-import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
-import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdate;
@@ -94,8 +93,10 @@ import com.outdoorapps.hiketimecallite.support.constants.RequestCode;
  */
 public class MainActivity extends FragmentActivity implements
 OnNavigationListener,
-ConnectionCallbacks,
-OnConnectionFailedListener,
+GoogleApiClient.ConnectionCallbacks,
+GoogleApiClient.OnConnectionFailedListener,
+//ConnectionCallbacks,
+//OnConnectionFailedListener,
 LocationListener,
 OnMyLocationButtonClickListener,
 OnSharedPreferenceChangeListener,
@@ -118,7 +119,7 @@ InstantCheckDialog.InstantCheckDialogListener {
 	private static TrackData trackData;
 
 	private GoogleMap mMap;
-	private LocationClient mLocationClient;
+	private GoogleApiClient mGoogleApiClient;
 	private static CameraPosition cp; // static to reduce SharedPreferences read
 	private static LatLngBounds latLngBounds;
 	private MenuItem trackButton, stopTrackingButton;
@@ -160,6 +161,8 @@ InstantCheckDialog.InstantCheckDialogListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		setGoogleApiClientIfNeeded();
+		
 		// 1. Set up app environment
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		prefs.registerOnSharedPreferenceChangeListener(this);
@@ -331,17 +334,17 @@ InstantCheckDialog.InstantCheckDialogListener {
 		if(importManager.hasJob())
 			importManager.showNameDialog(this);
 
-		setUpLocationClientIfNeeded();
-		if(mLocationClient.isConnected()==false)
-			mLocationClient.connect();
+		setGoogleApiClientIfNeeded();
+		if(mGoogleApiClient.isConnected()==false)
+			mGoogleApiClient.connect();
 		checkSampleRouteAdded();
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		if (mLocationClient != null && tracking==false) {
-			mLocationClient.disconnect();
+		if (mGoogleApiClient != null && tracking==false) {
+			mGoogleApiClient.disconnect();
 		}
 		if(tracking==true)
 			tracker.setPauseUpdate(true);
@@ -1102,12 +1105,13 @@ InstantCheckDialog.InstantCheckDialogListener {
 		}
 	}
 
-	private void setUpLocationClientIfNeeded() {
-		if (mLocationClient == null) {
-			mLocationClient = new LocationClient(
-					getApplicationContext(),
-					this,  // ConnectionCallbacks
-					this); // OnConnectionFailedListener
+	private void setGoogleApiClientIfNeeded() {
+		if (mGoogleApiClient == null) {
+			mGoogleApiClient = new GoogleApiClient.Builder(this)
+			.addApi(LocationServices.API)
+			.addConnectionCallbacks(this) // ConnectionCallbacks
+			.addOnConnectionFailedListener(this) // OnConnectionFailedListener
+			.build();
 		}
 	}
 
@@ -1124,15 +1128,15 @@ InstantCheckDialog.InstantCheckDialogListener {
 	public void onConnectionFailed(ConnectionResult result) {
 		// Do nothing
 	}
-
+	
 	@Override
-	public void onConnected(Bundle connectionHint) {
-		mLocationClient.requestLocationUpdates(REQUEST,this);  // LocationListener
+	public void onConnectionSuspended(int cause) {
+		// Do nothing
 	}
 
 	@Override
-	public void onDisconnected() {
-		// Do nothing
+	public void onConnected(Bundle connectionHint) {
+		LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, REQUEST, this);
 	}
 
 	@Override
